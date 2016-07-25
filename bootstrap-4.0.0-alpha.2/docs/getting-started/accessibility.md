@@ -42,6 +42,7 @@ Note that this bug will also affect any other in-page links your site may be usi
 </body>
 {% endhighlight %}
 
+
 ## Nested headings
 
 When nesting headings (`<h1>` - `<h6>`), your primary document header should be an `<h1>`. Subsequent headings should make logical use of `<h2>` - `<h6>` such that screen readers can construct a table of contents for your pages.
