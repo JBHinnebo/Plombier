@@ -25,17 +25,20 @@ section{
   background-position: top-center;
   position: relative;
   height:300px;
+  text-align: center;
 }
 
-.titre {
-  position: absolute;
-  text-align: center;
-  width: 480px;
-  margin:43px auto 0px;
-  font-size: 25px;
-  color:#223;
-  background-color: rgba(200, 200, 200, 0.9);
-  border-radius: 10px;
+
+#titre{
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  color:white;
+  background-color: rgba(255, 0, 0, 0.8);
+  border-radius: 20px;
+  position:absolute;
+  top:20px;
+  left:30%;
+  right:30%;
 
 }
 
@@ -244,6 +247,15 @@ font-weight:
 
 @media only screen and (max-width:750px){
 
+#titre {
+  font-size: 20px;
+  top:20px;
+  left:15%;
+  right:15%;
+
+}
+
+
   .hide_responsive{
 
     display: none;
@@ -256,6 +268,33 @@ font-weight:
   LARGE
 ============================================================================= */
 @media only screen and (min-width:750px){
+
+  #titre {
+    font-size: 20px;
+    top:20px;
+    left:20%;
+    right:20%;
+
+  }
+
+
+  section {
+    width:960px;
+    margin:auto;
+  }
+
+}
+
+@media only screen and (min-width:1050px){
+
+  #titre {
+    font-size: 20px;
+    top:20px;
+    left:30%;
+    right:30%;
+
+  }
+
 
   section {
     width:960px;
