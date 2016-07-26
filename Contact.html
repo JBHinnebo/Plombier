@@ -28,6 +28,8 @@
   <link href="https://fonts.googleapis.com/css?family=Cinzel:700,400" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700italic,400italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Sanchez:400,400italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Catamaran:400,700,100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
   <!-- Bootstrap core CSS & user custom styles -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -59,12 +61,36 @@
   <header class="header">
 
 
-<nav class="nav nav-inline navigation">
-  <a class="nav-link active" href="index.html">Acceuil</a>
-  <a class="nav-link" href="Devis">Devis</a>
-  <a class="nav-link" href="A_propos">A Propos</a>
-  <a class="nav-link" href="Contact.html">Contact</a>
-</nav>
+    <nav class="navbar navbar-light navigation">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsing-topbar" style="color:white;">
+            &#9776;
+          </button>
+          <div class="collapse" id="collapsing-topbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-item">
+                  <a href="https://simplon-roubaix.github.io/portfolio-JBH-H-l-na/index.html"><i class="" aria-hidden="true"></i>Accueil</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="https://simplon-roubaix.github.io/portfolio-JBH-H-l-na/A_propos.html"><i class="" aria-hidden="true"></i>Devis</a>
+              </li>
+
+              <li class="nav-item">
+                  <a href="https://simplon-roubaix.github.io/portfolio-JBH-H-l-na/Contact.html"><i class="" aria-hidden="true"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+
+
+    <nav class="nav nav-inline navigation hide_responsive">
+    <a class="nav-link active" href="index.html">Acceuil</a>
+    <a class="nav-link" href="Devis.html">Devis</a>
+    <a class="nav-link" href="Contact.html">Contact</a>
+    </nav>
     <!-- End of the medium & large devices fixed navigation top-bar -->
 
     <!-- Beginning of the decorative header -->
@@ -80,7 +106,48 @@
    Section whichs contains the content of the page
 =========================================================================== -->
 
+<section>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Nous contacter directement?</h2>
+        <p>Vous avez un problème impossible à définir? Besoin d'un renseignement sur les capacités exeptionnels de notre plombier nationnal?</p>
+        <p>Nous vous encourageons à prendre contact en usant de toutes les possibilités listées ci-dessous.</p>
+      </div>
+
+<form action="Contact.html" method="post">
+  <fieldset>
+    <legend>Vos coordonnés:</legend>
+    <label for="nom">Nom:</label>
+    <input type="text" id="nom" name="nom_de_l'utilisateur">
+    <label for="prenom">Prénom:</label>
+    <input type="text" id="prenom" name="prenom_de_l'utilisateur">
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="email_de_l'utilisateur">
+    <label for="telephone">télephone:</label>
+
+    <input type="" id="telephone" name="telephone_de_l'utilisateur">
+  </fieldset>
+  <fieldset>
+    <legend>Quel est le problème?</legend>
+    <label for="problem">Problème(s) rencontré(s):</label>
+    <textarea id="probleme" name="problemes_rencontres"></textarea>
+    <label for="priorite">Priorité:</label>
+    <select id="priorite" name="priorite">
+      <option value="pas_urgent">Pas d'urgence</option>
+      <option value="petit_probleme">Maintenant!</option>
+      <option value="urgent">Urgent!</option>
+      <option value="Extremement_urgent">Urgentissime!</option>
+    </select>
+  </fieldset>
+    <button class="send" type="submit">Envoyer</button>
+</form>
+
+    </div>
+  </div>
+
+</section>
 
 <!-- ==========================================================================
    Footer
@@ -92,8 +159,22 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <p>uscipit venenatis euismod. Etiam at lacus accumsan, imperdiet nunc a, sagittis est. Duis sed metus vitae libero vehicula condimentum. Morbi id bibendum est, a commodo augue. Donec feugiat arcu libero, eget semper nulla hendrerit vel. Vestibulum varius dolor at tristique rhoncus. Pellentesque e</p>
+
+        <div class="col-sm-12 footer-list">
+          <ul>
+            <li>
+              <p>Tél: <a href="">99 99 99 99 99</a></p>
+            </li>
+            <li>
+              <p>Email: <a href="">plombier.faux@génial.fr</a></p>
+            </li>
+            <li>
+              <p>Facebook: <a href="">http://scamartist.facebook.com/</a></p>
+            </li>
+            <li>
+              <p>Twitter: <a href="">http://iwantmoney.twitter.com/</a></p>
+            </li>
+
         </div>
       </div>
     </div>
